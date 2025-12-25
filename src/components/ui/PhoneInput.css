@@ -1,0 +1,36 @@
+.phone-input-container {
+  position: relative;
+}
+
+.phone-input-container.error > div {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 1px #ef4444 !important;
+}
+
+.phone-input-container > div {
+  transition: all 0.2s ease;
+}
+
+.phone-input-container > div:hover {
+  border-color: #9ca3af;
+}
+
+.phone-input-container input:disabled {
+  background-color: #f9fafb;
+  cursor: not-allowed;
+  color: #6b7280;
+}
+
+.phone-input-container input::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.phone-input-container input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+} 
+ 
+ 
+ 

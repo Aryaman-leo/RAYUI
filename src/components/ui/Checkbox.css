@@ -1,0 +1,58 @@
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #a0a3a8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.checkbox.checked {
+  background-color: #0069c2;
+  border-color: #0069c2;
+}
+
+.checkbox:hover {
+  border-color: #0069c2;
+}
+
+.checkmark {
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.checkbox.disabled {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.checkbox.disabled.checked {
+  background-color: #e0e7ff;
+  border-color: #c7d2fe;
+}
+
+.checkbox.disabled.checked .checkmark {
+  border-color: #a5b4fc;
+}
+
+.checkbox-label {
+  margin-left: 8px;
+  font-size: 15px;
+  color: #1f2937;
+  user-select: none;
+ 
+} 

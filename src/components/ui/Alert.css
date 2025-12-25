@@ -1,0 +1,76 @@
+/* Base alert styles */
+.alert-base {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+}
+
+/* Error alert */
+.alert-error {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.alert-error::before {
+  content: "⚠️";
+  margin-right: 0.5rem;
+}
+
+/* Success alert */
+.alert-success {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.alert-success::before {
+  content: "✅";
+  margin-right: 0.5rem;
+}
+
+/* Warning alert */
+.alert-warning {
+  background-color: #fffbeb;
+  color: #d97706;
+  border: 1px solid #fed7aa;
+}
+
+.alert-warning::before {
+  content: "⚠️";
+  margin-right: 0.5rem;
+}
+
+/* Info alert */
+.alert-info {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+.alert-info::before {
+  content: "ℹ️";
+  margin-right: 0.5rem;
+}
+
+/* Data privacy alert (specific to the app) */
+.data-privacy {
+  background-color: #F7FDFA;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .alert-base {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+} 

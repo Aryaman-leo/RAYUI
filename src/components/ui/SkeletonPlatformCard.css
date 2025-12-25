@@ -1,0 +1,44 @@
+/* Skeleton Platform Card Component Styles - Matching Real Platform Cards */
+.skeleton-platform-card {
+  background-color: white;
+  border-radius: 20px;
+  height: 181px;
+  padding: 20px 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 300px;
+  flex: 1 1 350px;
+  border: none;
+}
+
+.skeleton-platform-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.skeleton-platform-name {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skeleton-job-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skeleton-platform-card {
+    min-width: 250px;
+    flex: 1 1 300px;
+  }
+}

@@ -1,0 +1,213 @@
+/* Skeleton Application Card Component Styles - Matching ApplicationCard Structure */
+.skeleton-application-card {
+  display: grid;
+  grid-template-columns: 35% 15% 15% 15% 20%;
+  align-items: center;
+  padding: 16px 0;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  min-height: 80px;
+  position: relative;
+  width: 100%;
+  gap: 0;
+  background: white;
+  margin-bottom: 12px;
+}
+
+/* Skeleton Application Card with Checkbox */
+.skeleton-application-card-with-checkbox {
+  grid-template-columns: 5% 30% 15% 15% 15% 20%;
+}
+
+/* Checkbox Column */
+.skeleton-application-card-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  width: 100%;
+}
+
+/* Column 1: Logo + Job Info (35% default, 30% with checkbox) */
+.skeleton-application-card-logo-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  grid-column: 1;
+  width: 100%;
+  padding: 0 16px 0 16px;
+}
+
+.skeleton-application-card-with-checkbox .skeleton-application-card-logo-info {
+  grid-column: 2;
+}
+
+/* Job Info */
+.skeleton-application-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Column 2: Submitted Date/Time (15%) */
+.skeleton-application-card-time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: flex-start;
+  width: 100%;
+  grid-column: 2;
+  padding: 0 8px 0 0;
+}
+
+.skeleton-application-card-with-checkbox .skeleton-application-card-time {
+  grid-column: 3;
+}
+
+.skeleton-time-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+/* Column 3: Platform (15%) */
+.skeleton-application-card-platform {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  grid-column: 3;
+  padding: 0 8px 0 0;
+}
+
+.skeleton-application-card-with-checkbox .skeleton-application-card-platform {
+  grid-column: 4;
+}
+
+/* Column 4: Status (15%) */
+.skeleton-application-card-status {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  grid-column: 4;
+  padding: 0 8px 0 0;
+}
+
+.skeleton-application-card-with-checkbox .skeleton-application-card-status {
+  grid-column: 5;
+}
+
+/* Column 5: View Button, Arrow (20%) */
+.skeleton-application-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  grid-column: 5;
+  padding: 0 16px 0 16px;
+}
+
+.skeleton-application-card-with-checkbox .skeleton-application-card-actions {
+  grid-column: 6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .skeleton-application-card {
+    grid-template-columns: 35% 8.33% 18.33% 18.33% 20%;
+    gap: 0;
+  }
+  
+  .skeleton-application-card-with-checkbox {
+    grid-template-columns: 5% 30% 8.33% 18.33% 18.33% 20%;
+  }
+  
+  .skeleton-application-card-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skeleton-application-card {
+    grid-template-columns: 40% 10% 20% 20% 10%;
+    gap: 8px;
+  }
+  
+  .skeleton-application-card-with-checkbox {
+    grid-template-columns: 5% 35% 10% 20% 20% 10%;
+  }
+  
+  .skeleton-application-card-actions {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skeleton-application-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+    margin: 8px 0;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: white;
+  }
+  
+  .skeleton-application-card-with-checkbox {
+    grid-template-columns: 1fr;
+  }
+  
+  .skeleton-application-card-logo-info {
+    grid-column: 1;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  
+  .skeleton-application-card-time,
+  .skeleton-application-card-platform,
+  .skeleton-application-card-status {
+    grid-column: 1;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .skeleton-application-card-time {
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 12px;
+  }
+  
+  .skeleton-application-card-platform {
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 12px;
+  }
+  
+  .skeleton-application-card-status {
+    margin-bottom: 12px;
+  }
+  
+  .skeleton-application-card-actions {
+    grid-column: 1;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .skeleton-application-card-checkbox {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+  }
+}
