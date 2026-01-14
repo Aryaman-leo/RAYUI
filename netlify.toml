@@ -4,3 +4,4 @@ publish = "dist"
 
 [build.environment]
 NODE_VERSION = "20"
+ROLLUP_DISABLE_NATIVE = "true"
