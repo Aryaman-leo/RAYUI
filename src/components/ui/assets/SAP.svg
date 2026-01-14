@@ -1,8 +1,0 @@
-<svg width="81" height="40" viewBox="0 0 81 40" xmlns="http://www.w3.org/2000/svg">
-<linearGradient id="a" x2="0" y2="40" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0ae" offset="0"/>
-<stop stop-color="#05a" offset="1"/>
-</linearGradient>
-<path d="m81 0h-81v40h41" fill="url(#a)"/>
-<path d="m40 8v19l-7-19h-7l-6 16c-1-4-5-5-8-6-2-1-4-2-4-3 0-1 1-2 4-2 2 0 3 0 6 2l3-5c-3-1-6-2-9-2-3 0-6 1-8 3-1 1-2 3-2 5 0 2 1 4 3 6 2 1 4 2 5 2 2 1 4 1 4 3 0 2-2 2-3 2-2 0-4 0-7-2l-2 5c3 2 6 2 9 2 2 0 6-1 8-3l0 2h7l1-3c3 1 6 1 8 0l1 3h12v-7h2c6 0 10-3 10-8 0-6-4-9-11-9zm-13 16 2-8h0l2 8c-2 1-4 1-5 0zm20-4v-6h2c2 0 4 1 4 3 0 2-2 3-4 3z" fill="#fff"/>
-</svg>

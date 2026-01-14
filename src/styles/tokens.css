@@ -1,0 +1,9 @@
+:root {
+  --color-action-primary-bg: value;
+  --color-action-primary-fg: value;
+  --color-action-primary-bg-hover: value;
+  --radius-control-md: value;
+  --space-control-x-md: value;
+  --space-control-y-md: value;
+  --font-weight-control: value;
+}
