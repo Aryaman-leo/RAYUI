@@ -1,5 +1,6 @@
 :root {
   --color-action-primary-bg: #007bff; /* Example blue */
+  --color-action-primary-bg-hover: #0056b3; /* Darker blue for hover */
   --color-action-primary-fg: #ffffff;
   --radius-control-md: 4px;
   --space-control-x-md: 16px;
