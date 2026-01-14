@@ -1,9 +1,8 @@
 :root {
-  --color-action-primary-bg: value;
-  --color-action-primary-fg: value;
-  --color-action-primary-bg-hover: value;
-  --radius-control-md: value;
-  --space-control-x-md: value;
-  --space-control-y-md: value;
-  --font-weight-control: value;
+  --color-action-primary-bg: #007bff; /* Example blue */
+  --color-action-primary-fg: #ffffff;
+  --radius-control-md: 4px;
+  --space-control-x-md: 16px;
+  --space-control-y-md: 8px;
+  --font-weight-control: 500;
 }
