@@ -1,16 +1,48 @@
 {
- "compilerOptions": {
-    "target": "ES2022",
-    "moduleResolution": "bundler",
-    "strict": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "jsx": "react-jsx"
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    "outDir": "./dist",
 
-  },
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+  
+    "strict": true,
+    "jsx": "react-jsx",
+
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "es2020",
+
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noUncheckedSideEffectImports": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+
+    "skipLibCheck": true,
+    "types": []
+    
+  }
 }
