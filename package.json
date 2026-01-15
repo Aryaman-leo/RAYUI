@@ -1,6 +1,6 @@
 {
   "name": "@aryaman-leo/rayui",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "RAYUI – React component library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,14 +17,26 @@
     "react-dom": ">=17"
   },
   "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.55.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.0.0"
   },
+
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build:types": "tsc",
+    "build:js": "rollup -c",
+    "build": "npm run build:types && npm run build:js"
+  },
+
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "rollup-plugin-dts": "^6.3.0",
+    "tslib": "^2.8.1"
   }
 }

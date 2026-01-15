@@ -1,10 +1,12 @@
+import type { ButtonHTMLAttributes } from "react"
+import "./Button.css"
+
 export type ButtonProps = {
   label: string
-  onClick?: (() => void) | undefined
+} & ButtonHTMLAttributes<HTMLButtonElement>
+
+export const Button = ({ label, ...props }: ButtonProps) => {
+  return <button {...props}>{label}</button>
 }
 
-export const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>
-}
-
-export default Button;
+export default Button
